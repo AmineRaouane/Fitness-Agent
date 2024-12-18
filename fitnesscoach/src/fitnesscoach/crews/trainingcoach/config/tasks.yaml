@@ -1,0 +1,24 @@
+Planner_task:
+  description: >
+    Generate a weekly plan based on this data.
+    - Fitness level: {fitness_level}
+    - Number of Training Sessions: {num_sessions}
+    - Goal: {fitness_goal}
+  expected_output: >
+    A well-rounded and effective plan for the upcoming week .
+    Formatted as markdown without '```'
+  agent: training_plan_maker
+
+Motivation_task:
+  description: >
+    Provide motivational tips and strategies to keep the trainee on track based on:
+    - Current progress: {current_progress}.
+    - Known challenges: {challenges}.
+  expected_output: >
+    A list of actionable strategies, including:
+    - Motivational quotes or affirmations.
+    - Techniques to overcome challenges.
+    - Suggestions for tracking and celebrating progress.
+    Formatted as markdown without '```'.
+  agent: motivation_mentor
+

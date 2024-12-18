@@ -1,0 +1,35 @@
+Sleep_task:
+  description: >
+    Provide sleep optimization strategies based on the following data:
+    - Sleep duration: {current_sleep_hours}
+    - Sleep quality: {current_sleep_quality}
+    - Sleep challenges: {specific_issues} .
+  expected_output: >
+    A list of personalized sleep improvement strategies formatted as markdown without '```'.
+    Include actionable steps for improving sleep quality and recovery.
+  agent: sleep_coach
+
+Rest_day_task:
+  description: >
+    Plan an active rest day that maximizes recovery and minimizes fatigue:
+    - Activity preferences: {activity_preferences} .
+    - Recovery needs: {recovery_needs}.
+  expected_output: >
+    A schedule for an active rest day, including:
+    - Suggested light physical activities.
+    - Relaxation techniques for mental recovery.
+    - Hydration and nutrition recommendations.
+    Formatted as markdown without '```'.
+  agent: rest_day_optimizer
+
+Warmup_and_recovery_task:
+  description: >
+    Develop a pre-workout warm-up and post-workout recovery routine based on the trainee's activity:
+    - Training type: {training_type} (e.g., strength, cardio, HIIT)
+    - Known injuries or restrictions: {injuries_restrictions}.
+  expected_output: >
+    Two separate routines:
+    - Warm-Up: 5-10 minutes of dynamic stretches, mobility exercises, or light cardio tailored to the training type.
+    - Recovery: Static stretching, foam rolling instructions, or recovery activities.
+    Formatted as markdown without '```'.
+  agent: warmup_and_recovery_coach
